@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primary: #1BADFF;
+    --secondary:  #d4d4d4;
+}
+
+body {
+    background-color:#f5f9fd ;
+    color: gray;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* header */
+
+.header{
+    background: var(--primary);
+    border-radius: 10px;
+    width: 450px;
+    height: 150px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.header-title{
+    color: white;
+    text-align: center;
+}
+.notification-container{
+    display: flex;
+    margin-top: 20px;
+}
+.notification{
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    width: 100px;
+    height: 35px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* list item */
+
+.list-container{
+    margin-top: 20px;
+    width: 450px;
+    height: 300px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.list-item{
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--secondary);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    min-height: 80px;
+}
+
+.list-text{
+    width: 380px;
+    word-wrap: break-word;
+}
+.delete-list{
+    font-size: 30px;
+    color: var(--primary);
+}
+
+/* input list */
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    width: 450px;
+}
+
+.input-container  input {
+    width: 380px;
+    height: 50px;
+    border-radius: 30px;
+    border-style: none;
+    background: #FFFFFF;
+    border: 1px solid var(--secondary);
+    padding: 20px;
+    color: gray;
+}
+.button-input-submit{
+    color: var(--primary);
+    font-size: 50px;
+}
+
+.button-input-submit:hover,
+.delete-list:hover{
+    opacity: 0.9;
+}
